@@ -1,0 +1,173 @@
+---
+sidebar: sidebar 
+permalink: reference-supported-configs.html 
+keywords: ec2, instance, type, vm, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations 
+summary: Cloud Volumes ONTAP est disponible dans plusieurs configurations dans AWS et Azure. 
+---
+= Configurations compatibles
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP est disponible dans AWS et Azure avec deux options de tarification : le paiement à l'utilisation ou le modèle BYOL (où vous apportez votre propre licence). Le paiement basé sur l'utilisation vous permet de choisir parmi trois configurations : explore, Standard ou Premium.
+
+
+
+== Cloud Volumes ONTAP pour AWS
+
+Dans AWS, vous pouvez déployer Cloud Volumes ONTAP en tant que système à un seul nœud ou en tant que paire HA.
+
+[cols="h,d,d,d,d"]
+|===
+|  | Découvrir | Standard | Premium | BYOL 
+
+
+| Types d'instances EC2  a| 
+* m4.xlarge
+* m5.xlarge
+
+ a| 
+* m4.2xlarge
+* m5.2xlarge
+* r4.xlarge
+* r5.xlarge
+
+ a| 
+* c4.4xlarge
+* c4.8xlarge
+* c5d.4xlarge*
+* c5d.9xlarge*
+* m4,4xlarge
+* m5.4xlarge
+* r4.2xlarge
+* r5.2xlarge
+* r5d.2xlarge*
+
+ a| 
+* c4.4xlarge
+* c4.8xlarge
+* c5d.4xlarge*
+* c5d.9xlarge*
+* m4.xlarge
+* m4.2xlarge
+* m4,4xlarge
+* m5.xlarge
+* m5.2xlarge
+* m5.4xlarge
+* r4.xlarge
+* r4.2xlarge
+* r5.xlarge
+* r5.2xlarge
+* r5d.2xlarge*
+
+
+
+
+| Stockage sous-jacent 4+| SSD à usage générique (gp2), SSD IOPS provisionnés (io1) et disques durs optimisés en débit (st1), jusqu'à 16 Tio par disque 
+
+
+| Capacité système maximale (disques + stockage objet) | 2 To | 10 To | 368 To | 368 Tio par licence 
+|===
+Remarques :
+
+. Les types d'instances signalés par un * incluent le stockage NVMe local, que Cloud Volumes ONTAP utilise comme _Flash cache_. Flash cache accélère l'accès aux données grâce à la mise en cache intelligente en temps réel des données utilisateur et des métadonnées NetApp lues récemment. Il est efficace pour les charges de travail exigeant une capacité de lecture aléatoire maximale, dont les bases de données, la messagerie et les services de fichiers. La compression doit être désactivée sur tous les volumes pour tirer parti des améliorations des performances de Flash cache. link:reference-limitations.html#flash-cache-limitations["En savoir plus >>"].
+. Pour certaines configurations, les limites de disque vous empêchent d'atteindre la limite de capacité de 368 Tio en utilisant uniquement des disques. Dans ce cas, vous pouvez atteindre la limite de capacité de 368 Tio de https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^]. Pour plus d'informations sur les limites de disques, reportez-vous à la section link:reference-storage-limits.html["limites de stockage"].
+. Si vous activez la hiérarchisation des données, la limite de capacité d'un système reste la même. La limite de capacité inclut à la fois les disques et le stockage objet.
+. Le Tiering des données est pris en charge avec Cloud Volumes ONTAP Standard, Premium et BYOL.
+. Lorsque vous choisissez un type d'instance EC2, vous pouvez indiquer s'il s'agit d'une instance partagée ou dédiée.
+. Les disques durs inactifs ne sont pas pris en charge par les paires haute disponibilité.
+. Les performances d'écriture améliorées sont activées lorsque l'utilisation de SSD EBS avec Cloud Volumes ONTAP Standard, Premium et BYOL.
+. Pour la prise en charge de chaque région AWS, consultez la section https://cloud.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
+
+
+
+
+== Cloud Volumes ONTAP pour Azure
+
+Dans Azure, vous pouvez déployer Cloud Volumes ONTAP en tant que système à un seul nœud ou en tant que paire HA.
+
+
+
+=== Systèmes à un seul nœud
+
+Lors du déploiement de Cloud Volumes ONTAP en tant que système à un seul nœud dans Azure, vous pouvez choisir l'une des configurations suivantes :
+
+[cols="h,d,d,d,d"]
+|===
+|  | Découvrir | Standard | Premium | BYOL 
+
+
+| Types de machines virtuelles | DS3_v2  a| 
+* DS4_v2
+* DS13_v2
+
+ a| 
+* DS5_v2
+* DS14_v2
+
+ a| 
+* DS3_v2
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+
+
+
+
+| Stockage sous-jacent 4+| Disques gérés HDD standard, disques gérés SSD standard et disques gérés SSD premium, jusqu'à 32 To par disque 
+
+
+| Capacité système maximale (disques + stockage objet) | 2 To | 10 To | 368 To | 368 Tio par licence 
+|===
+Remarques :
+
+. Si vous activez la hiérarchisation des données, la limite de capacité d'un système reste la même. La limite de capacité inclut à la fois les disques et le stockage objet.
+. Le Tiering des données n'est pas pris en charge avec le type de machine virtuelle DS3_v2.
+. Les performances améliorées en écriture sont activées lorsque vous utilisez des disques de stockage Azure Premium, mais pas avec le type de machine virtuelle DS3_v2.
+. Pour la prise en charge par région Azure, consultez la section https://cloud.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
+
+
+
+
+=== Paires HA
+
+Lors du déploiement de Cloud Volumes ONTAP en tant que paire HA dans Azure, vous pouvez choisir l'une des configurations suivantes :
+
+[cols="h,d,d,d,d"]
+|===
+|  | Découvrir | Standard | Premium | BYOL 
+
+
+| Types de machines virtuelles | Non pris en charge  a| 
+* DS4_v2
+* DS13_v2
+
+ a| 
+* DS5_v2
+* DS14_v2
+
+ a| 
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+
+
+
+
+| Stockage sous-jacent | Non pris en charge 3+| Les blobs de page Premium, jusqu'à 8 Tio par disque 
+
+
+| Capacité système maximale | Non pris en charge | 10 To | 368 To | 368 Tio par licence 
+|===
+Remarques :
+
+. Le Tiering des données n'est pas pris en charge avec les paires haute disponibilité.
+. Pour la prise en charge par région Azure, consultez la section https://cloud.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
+
