@@ -196,7 +196,7 @@ Vous devez configurer NetApp Volume Encryption à partir de l'interface de ligne
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["Découvrez comment configurer NetApp Volume Encryption"^]
 
 
-NOTE: NetApp Volume Encryption est une technologie de cryptage différente de celle du cryptage Cloud Volumes ONTAP, qui a crypté les données au niveau de l'agrégat et est aujourd'hui obsolète. Une mise à niveau entre ces deux technologies de chiffrement n'est pas possible. Voir  features in AWS pour en savoir plus.
+NOTE: NetApp Volume Encryption est une technologie de cryptage différente de celle du cryptage Cloud Volumes ONTAP, qui a crypté les données au niveau de l'agrégat et est aujourd'hui obsolète. Une mise à niveau entre ces deux technologies de chiffrement n'est pas possible. Voir <<Fonctionnalités obsolètes dans AWS>> pour en savoir plus.
 
 
 

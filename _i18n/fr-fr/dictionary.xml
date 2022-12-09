@@ -57,7 +57,6 @@
   <block id="54df1367cfc6660a61b9fc8a38dd642e" category="paragraph">La déconnexion d'un volume EBS d'une instance Cloud Volumes ONTAP, puis sa connexion à une autre instance Cloud Volumes ONTAP n'est pas prise en charge. Vous devez utiliser Cloud Manager pour répliquer les données entre instances.</block>
   <block id="2d03060cc88d48d8c65d3a01864614ad" category="section-title">Restrictions connues de Microsoft Azure</block>
   <block id="d0e7588890233fc627c7bcaab1e75386" category="paragraph">Cloud Volumes ONTAP s'est limité dans Azure par les restrictions connues suivantes.</block>
-  <block id="40f7aa196052206d81d0ee3a44db5c7c" category="section-title">Les nouveaux déploiements ne sont pas pris en charge</block>
   <block id="cc429ef436869e43759a68ebf97158a2" category="paragraph">Les nouveaux déploiements de Cloud Volumes ONTAP 9.5 ne sont plus pris en charge dans Azure. Vous devez déployer Cloud Volumes ONTAP 9.7.</block>
   <block id="0066e8873a17823db601b98ebbc37dd2" category="section-title">Limitations de LA HAUTE DISPONIBILITÉ</block>
   <block id="7e06c5d5d754bf97499c6ed081fc8e43" category="paragraph">Les limites suivantes affectent les paires HA Cloud Volumes ONTAP dans Microsoft Azure :</block>
@@ -66,8 +65,6 @@
   <block id="74522068eb4d7b9d888846015e92c07a" category="list-text">Les paires HA ne sont pas prises en charge dans certaines régions.</block>
   <block id="1538d38eb23a96781db500ec7bd30195" category="inline-link">Consultez la liste des régions Azure prises en charge</block>
   <block id="f5b8e6c4c4b082cf610f078e361a727f" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block>.</block>
-  <block id="e4f5b6f59db7bfa0e08c02262ddbd654" category="section-title">Le paiement à l'utilisation n'est pas disponible pour les partenaires de FST</block>
-  <block id="f2ff5834d93c258f0fc4ad6cf6a17942" category="paragraph">Si vous êtes un partenaire de fournisseur de solutions cloud Microsoft, vous ne pouvez pas déployer Cloud Volumes ONTAP Explore, Standard ou Premium car les abonnements avec paiement à l'utilisation ne sont pas disponibles pour les partenaires d'un FST. Vous devez acheter une licence et déployer Cloud Volumes ONTAP BYOL.</block>
   <block id="b3dfe19c7d46d1f8795ac17bf3d5a909" category="summary">Cloud Volumes ONTAP présente des limites de configuration du stockage pour assurer des opérations fiables. Pour des performances optimales, ne configurez pas votre système aux valeurs maximales.</block>
   <block id="150a34e7bbdf7765066eae5fadb9f919" category="doc">Limites de stockage</block>
   <block id="ecedb9353641e4bd058af0268a6edce8" category="section-title">Capacité système maximale par licence</block>
@@ -399,4 +396,7 @@
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Toute la documentation de Cloud Manager</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">Cloud ONTAP</block>
+  <block id="b7a391ba538fb8a6830548a168a702ed" category="section-title">Les nouveaux déploiements ne sont pas pris en charge</block>
+  <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">Pour la haute disponibilité, la capacité de licence est-elle limitée par nœud ou pour la paire HA entière ?</block>
+  <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">Pour un système haute disponibilité dans AWS, est-ce que les données en miroir sont prises en compte avec la limite de capacité ?</block>
 </blocks>
