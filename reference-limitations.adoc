@@ -112,7 +112,7 @@ Après le redémarrage d'un nœud, le partenaire doit synchroniser les données 
 
 === Limitations de l'environnement AWS C2S
 
-Consultez les limites de la documentation Cloud Manager : https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Lancez-vous dans l'environnement AWS C2S"^]
+Consultez les limites de la documentation Cloud Manager : https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Lancez-vous dans l'environnement AWS C2S"^]
 
 
 

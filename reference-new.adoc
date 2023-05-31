@@ -17,7 +17,7 @@ summary: Cloud Volumes ONTAP 9.5 comprend un certain nombre de nouvelles fonctio
 Cloud Volumes ONTAP 9.5 comprend un certain nombre de nouvelles fonctionnalités et améliorations.
 
 
-NOTE: D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de Cloud Manager. Voir la https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de version de Cloud Manager"^] pour plus d'informations.
+NOTE: D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de Cloud Manager. Voir la https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Notes de version de Cloud Manager"^] pour plus d'informations.
 
 
 
@@ -64,7 +64,7 @@ La version 9.5 P4 du correctif est désormais disponible pour Cloud Volumes ONTA
 
 Cloud Volumes ONTAP 9.5 et Cloud Manager 3.6.4 sont désormais disponibles pour les États-Unis Intelligence Community (IC) via l'environnement AWS commercial Cloud Services (C2S). Vous pouvez déployer des paires HA et des systèmes à un seul nœud dans C2S.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Lancez-vous dans l'environnement AWS C2S"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Lancez-vous dans l'environnement AWS C2S"^]
 
 
 
@@ -147,7 +147,7 @@ La version GA d'Cloud Volumes ONTAP 9.5, General Availability (GA), est désorma
 
 La limite de capacité système pour Cloud Volumes ONTAP Premium et BYOL est désormais de 368 To sur toutes les configurations : un seul nœud et une haute disponibilité, à la fois sur AWS et Azure.
 
-Pour certaines configurations, les limites de disque vous empêchent d'atteindre la limite de capacité de 368 To en utilisant uniquement des disques. Dans ce cas, vous pouvez atteindre la limite de capacité de 368 To de https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^]. Par exemple, un système à un seul nœud dans Azure peut disposer d'une capacité sur disque de 252 To, ce qui permet d'atteindre jusqu'à 116 To de données inactives dans le stockage Azure Blob.
+Pour certaines configurations, les limites de disque vous empêchent d'atteindre la limite de capacité de 368 To en utilisant uniquement des disques. Dans ce cas, vous pouvez atteindre la limite de capacité de 368 To de https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^]. Par exemple, un système à un seul nœud dans Azure peut disposer d'une capacité sur disque de 252 To, ce qui permet d'atteindre jusqu'à 116 To de données inactives dans le stockage Azure Blob.
 
 Pour plus d'informations sur les limites de disques, reportez-vous à la section link:reference-storage-limits.html["limites de stockage"].
 
@@ -193,7 +193,7 @@ Pour l'instant, Cloud Volumes ONTAP prend en charge NetApp Volume Encryption ave
 
 Vous devez configurer NetApp Volume Encryption à partir de l'interface de ligne de commande. Vous pouvez ensuite utiliser soit l'interface de ligne de commandes, soit System Manager pour activer le chiffrement sur des volumes spécifiques. Cloud Manager ne prend pas en charge NetApp Volume Encryption à partir de son interface utilisateur et de ses API.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["Découvrez comment configurer NetApp Volume Encryption"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html["Découvrez comment configurer NetApp Volume Encryption"^]
 
 
 NOTE: NetApp Volume Encryption est une technologie de cryptage différente de celle du cryptage Cloud Volumes ONTAP, qui a crypté les données au niveau de l'agrégat et est aujourd'hui obsolète. Une mise à niveau entre ces deux technologies de chiffrement n'est pas possible. Voir <<Fonctionnalités obsolètes dans AWS>> pour en savoir plus.
@@ -208,15 +208,15 @@ La version 9.5 ne prend plus en charge deux fonctionnalités.
 
 ==== Le chiffrement au niveau de l'agrégat Cloud Volumes ONTAP prend désormais uniquement en charge le chiffrement natif AWS des disques
 
-Le chiffrement des données au repos des agrégats utilisant des gestionnaires de clés externes n'est plus pris en charge. Si vous utilisez actuellement cette fonction et que vous souhaitez mettre à niveau, vous devez lancer un nouveau système 9.5, puis https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["réplication des données"] à ce système.
+Le chiffrement des données au repos des agrégats utilisant des gestionnaires de clés externes n'est plus pris en charge. Si vous utilisez actuellement cette fonction et que vous souhaitez mettre à niveau, vous devez lancer un nouveau système 9.5, puis https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["réplication des données"] à ce système.
 
-Le chiffrement des données au repos est toujours pris en charge par d'autres méthodes. Vous pouvez chiffrer les données à l'aide de NetApp Volume Encryption ou à l'aide du service AWS Key Management Service (KMS). https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-security.html["En savoir plus sur le cryptage des données au repos"^].
+Le chiffrement des données au repos est toujours pris en charge par d'autres méthodes. Vous pouvez chiffrer les données à l'aide de NetApp Volume Encryption ou à l'aide du service AWS Key Management Service (KMS). https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-security.html["En savoir plus sur le cryptage des données au repos"^].
 
 
 
 ==== c4.2xlarge n'est plus pris en charge
 
-Le type d'instance c4.2xlarge n'est pas pris en charge avec la version 9.5. Si vous utilisez actuellement ce type d'instance, vous devez d'abord https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["remplacez par un nouveau type d'instance"] avant de passer à la version 9.5.
+Le type d'instance c4.2xlarge n'est pas pris en charge avec la version 9.5. Si vous utilisez actuellement ce type d'instance, vous devez d'abord https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["remplacez par un nouveau type d'instance"] avant de passer à la version 9.5.
 
 
 
@@ -232,7 +232,7 @@ Un aperçu des paires HA Cloud Volumes ONTAP dans Microsoft Azure est maintenant
 
 Les paires HA dans Azure sont disponibles en avant-première. Vous pouvez demander une licence d'aperçu en nous contactant à l'adresse ng-Cloud-Volume-ONTAP-preview@netapp.com.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html["En savoir plus sur les paires haute disponibilité dans Azure"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["En savoir plus sur les paires haute disponibilité dans Azure"^].
 
 
 
@@ -256,7 +256,7 @@ Pour l'instant, Cloud Volumes ONTAP prend en charge NetApp Volume Encryption ave
 
 Vous devez configurer NetApp Volume Encryption à partir de l'interface de ligne de commande. Vous pouvez ensuite utiliser soit l'interface de ligne de commandes, soit System Manager pour activer le chiffrement sur des volumes spécifiques. Cloud Manager ne prend pas encore en charge NetApp Volume Encryption.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["Découvrez comment configurer NetApp Volume Encryption"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html["Découvrez comment configurer NetApp Volume Encryption"^]
 
 
 
