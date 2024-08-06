@@ -187,7 +187,7 @@ En savoir plus sur https://aws.amazon.com/ec2/instance-types/m5/["Instances M5"^
 
 === Prise en charge de NetApp Volume Encryption dans AWS
 
-https://www.netapp.com/us/media/ds-3899.pdf["NVE (NetApp Volume Encryption)"^] est une technologie logicielle de chiffrement des données au repos d'un volume à la fois. Les données, les copies Snapshot et les métadonnées sont chiffrées. L'accès aux données est donné par une clé XTS-AES-256 unique, une par volume.
+https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NVE (NetApp Volume Encryption)"^] est une technologie logicielle de chiffrement des données au repos sur un volume à la fois. Les données, les copies Snapshot et les métadonnées sont chiffrées. L'accès aux données est donné par une clé XTS-AES-256 unique, une par volume.
 
 Pour l'instant, Cloud Volumes ONTAP prend en charge NetApp Volume Encryption avec un serveur de gestion externe des clés. Un gestionnaire de clés intégré n'est pas pris en charge. Vous trouverez les gestionnaires de clés pris en charge dans le http://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^] Sous la solution *gestionnaires de clés*.
 
@@ -250,7 +250,7 @@ Vous pouvez désormais déployer Cloud Volumes ONTAP dans la région France cent
 
 === Prise en charge de NetApp Volume Encryption dans Azure
 
-https://www.netapp.com/us/media/ds-3899.pdf["NVE (NetApp Volume Encryption)"^] est une technologie logicielle de chiffrement des données au repos d'un volume à la fois. Les données, les copies Snapshot et les métadonnées sont chiffrées. L'accès aux données est donné par une clé XTS-AES-256 unique, une par volume.
+https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NVE (NetApp Volume Encryption)"^] est une technologie logicielle de chiffrement des données au repos sur un volume à la fois. Les données, les copies Snapshot et les métadonnées sont chiffrées. L'accès aux données est donné par une clé XTS-AES-256 unique, une par volume.
 
 Pour l'instant, Cloud Volumes ONTAP prend en charge NetApp Volume Encryption avec un serveur de gestion externe des clés. Un gestionnaire de clés intégré n'est pas pris en charge. Vous trouverez les gestionnaires de clés pris en charge dans le http://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^] Sous la solution *gestionnaires de clés*.
 
