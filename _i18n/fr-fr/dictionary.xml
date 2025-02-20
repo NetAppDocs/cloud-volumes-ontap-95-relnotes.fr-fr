@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="86356f570acc8683cfbf184efa49892d" category="summary">Ces notes de version décrivent les nouvelles fonctionnalités, les limites et les problèmes connus spécifiques à Cloud Volumes ONTAP 9.5.</block>
-  <block id="543ec7e9ddd2b6bc0d9506114c6dda6f" category="doc">Notes de version de Cloud Volumes ONTAP 9.5</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">Les limitations connues identifient les plateformes, les périphériques ou les fonctions qui ne sont pas pris en charge par cette version du produit, ou qui ne fonctionnent pas correctement avec elle. Examinez attentivement ces limites.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">Limites connues</block>
   <block id="1ac484b7039a7a63fa107c6b607c9db1" category="section-title">Limitations générales</block>
@@ -368,7 +367,6 @@
   <block id="6b0a44b356eaba04470f307c6d3849f8" category="list-text"><block ref="6b0a44b356eaba04470f307c6d3849f8" category="inline-link-macro-rx"></block></block>
   <block id="a11ac6880e72412c0f54ae19bea3d191" category="inline-link">Notification relative à ONTAP 9.5</block>
   <block id="fff6a4abb2894768e9e61322ef29ebc5" category="list-text"><block ref="fff6a4abb2894768e9e61322ef29ebc5" category="inline-link-rx"></block></block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">Accueil des notes de mise à jour</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Quoi de neuf</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencez</block>
   <block id="e19968c5ebc4b94a271992f4b0563be8" category="sidebar">Configurations et limites</block>
@@ -400,4 +398,5 @@
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="7c9d324d1d8b491ad2ad038c3ae1a08d" category="paragraph"><block ref="88f79bf25d1193134b67da843a562378" category="inline-link-rx"></block> est une technologie logicielle de chiffrement des données au repos sur un volume à la fois. Les données, les copies Snapshot et les métadonnées sont chiffrées. L'accès aux données est donné par une clé XTS-AES-256 unique, une par volume.</block>
+  <block id="768e5fecad4c27b08f9ffd5fd34e1330" category="sidebar">Notes de version de Cloud Volumes ONTAP 9.5</block>
 </blocks>
