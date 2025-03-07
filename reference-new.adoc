@@ -104,7 +104,7 @@ NOTE: La réactivation du cache après un redémarrage n'est pas prise en charge
 
 Les paires HAUTE DISPONIBILITÉ sont désormais prises en charge dans la région Amérique centrale dans Azure.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Consultez la liste complète des régions Azure prises en charge"^].
+https://bluexp.netapp.com/cloud-volumes-global-regions["Consultez la liste complète des régions Azure prises en charge"^].
 
 
 
@@ -133,7 +133,7 @@ La version GA est disponible dans la plupart des régions Azure, à l'exception 
 
 Dans ces régions, des opérations de maintenance peuvent empêcher la création d'Cloud Volumes ONTAP et empêcher le basculement. Nous prévoyons de soutenir ces régions dès que l'entretien sera terminé.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Consultez la liste complète des régions Azure prises en charge"^].
+https://bluexp.netapp.com/cloud-volumes-global-regions["Consultez la liste complète des régions Azure prises en charge"^].
 
 
 

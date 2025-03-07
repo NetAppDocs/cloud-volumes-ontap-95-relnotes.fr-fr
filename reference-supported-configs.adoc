@@ -82,7 +82,7 @@ Remarques :
 . Lorsque vous choisissez un type d'instance EC2, vous pouvez indiquer s'il s'agit d'une instance partagée ou dédiée.
 . Les disques durs inactifs ne sont pas pris en charge par les paires haute disponibilité.
 . Les performances d'écriture améliorées sont activées lorsque l'utilisation de SSD EBS avec Cloud Volumes ONTAP Standard, Premium et BYOL.
-. Pour la prise en charge de chaque région AWS, consultez la section https://cloud.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
+. Pour la prise en charge des régions AWS, voir https://bluexp.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
 
 
 
@@ -130,7 +130,7 @@ Remarques :
 . Si vous activez la hiérarchisation des données, la limite de capacité d'un système reste la même. La limite de capacité inclut à la fois les disques et le stockage objet.
 . Le Tiering des données n'est pas pris en charge avec le type de machine virtuelle DS3_v2.
 . Les performances améliorées en écriture sont activées lorsque vous utilisez des disques de stockage Azure Premium, mais pas avec le type de machine virtuelle DS3_v2.
-. Pour la prise en charge par région Azure, consultez la section https://cloud.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
+. Pour la prise en charge des régions Azure, voir https://bluexp.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
 
 
 
@@ -169,5 +169,5 @@ Lors du déploiement de Cloud Volumes ONTAP en tant que paire HA dans Azure, vou
 Remarques :
 
 . Le Tiering des données n'est pas pris en charge avec les paires haute disponibilité.
-. Pour la prise en charge par région Azure, consultez la section https://cloud.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
+. Pour la prise en charge des régions Azure, voir https://bluexp.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
 
